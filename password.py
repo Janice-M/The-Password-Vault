@@ -8,7 +8,7 @@ class User:
     name = input()
     
     print("Rafiki enter password:")
-    password = int(input ())
+    password = input ()
     print("username: "+ name+ ""+ "password: " +  str(password))
     
     
