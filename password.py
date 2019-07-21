@@ -1,4 +1,5 @@
 class User:
+
     
     print('Rafiki, welcome to The Password Vault')
     
@@ -10,10 +11,13 @@ class User:
     if option_selected == 1:
         print( "Welcome consistent rafiki")
         print("Kindly, enter your username:")
-        
+        loginUsername= input()
         print("Kindly enter your password")
+        loginPassword= input()
         
     else:
         print ("Welcome new rafiki")
         print(" Create your username:")
+        newUsername= input()
         print("Create your password")
+        newPassword= input()
