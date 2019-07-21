@@ -1,5 +1,6 @@
-class User:
 
+class User:
+    userList= {} 
     
     print('Rafiki, welcome to The Password Vault')
     
