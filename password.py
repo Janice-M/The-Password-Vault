@@ -1,15 +1,19 @@
 class User:
-    """ greeting = "Hello"
-    school = "Moringa"
-
-    print(greeting + ", " + school + "!") """
     
-    print("Rafiki enter username:")
-    name = input()
+    print('Rafiki, welcome to The Password Vault')
     
-    print("Rafiki enter password:")
-    password = input ()
-    print("username: "+ name+ ""+ "password: " +  str(password))
+    print("Rafiki, let us get started")
+    print("1. Login ")
+    print("2. Sign up ")
+    option_selected = int(input())
     
-    
-pass
+    if option_selected == 1:
+        print( "Welcome consistent rafiki")
+        print("Kindly, enter your username:")
+        
+        print("Kindly enter your password")
+        
+    else:
+        print ("Welcome new rafiki")
+        print(" Create your username:")
+        print("Create your password")
