@@ -60,5 +60,17 @@ class Credential:
     """ apps list contains the apps and passwords that the user wants stored in the password vault """
     vaultUser= []
     """  vaultUser list contains the credentials created in the user class """
-    def __init__(self,loginUsername , loginPassword ):
-        
+    
+    @classmethod
+    def verify(cls, loginUsername, loginPassword):
+        onlineUser = ''
+        """ the for loop checks through to the list to confirm whether the credetnials are a match """
+        for user in User.userList:
+            if (user.loginUsername == loginUsername and user.loginPassword == loginPassword):
+                onlineUser= user.loginUsername
+        return onlineUser 
+
+    def __init__(self, appName , appUsername, appPassword):
+        self.appUsername = appUsername
+        self.appName = appName
+        self.appPassword = appPassword    
