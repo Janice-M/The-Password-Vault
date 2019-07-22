@@ -14,8 +14,7 @@ BDD(Behavior Driven Development) focuses on enabling user to create an account a
 
 
 | Command            | Description|
-|--------------------|----------------------------------------------------------------------------|
-
+|--------------------|------------|
 | select a number| This will either log you in , exit the app, sign you up depending on what you want|
 | Login| This will grant you access to your existing account|
 | sign up| This will allow you to create a new user account|
