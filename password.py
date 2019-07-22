@@ -1,12 +1,17 @@
 import random
 import string
+import pyperclip
 
 global userList
 class User:
     def __init__(self,loginUsername,loginPassword):
         self.loginUsername =loginUsername
         self.loginPassword =loginPassword 
+    def  saveUser (self):
+        """ This function saves the user details """
+        User.userList.append(self)
     
+        
     def passGen(size = 8, char=string.ascii_uppercase + string.ascii_lowercase + string.digits):
         gen = ''.join(random.choice(char) for _ in range(size))
         return gen
@@ -37,10 +42,14 @@ class User:
         if newPassword == 1: 
             print("Enter password below")
             newPassword = input()
-            userList.append([newUsername, newPassword ])
+            
+        saveUser(newUsername,newPassword)
+            
         elif newPassword == 2:
             generator = passGen()
-            userList.append([newUsername, generator ])
+        saveUser(newUsername, generator)
+            """ saveUser is to save the user details using the method above  """
+            
         
         """ the elif option is used as it can take in arguements for users who would like to generate passwords """
         
