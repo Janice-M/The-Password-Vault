@@ -1,16 +1,19 @@
-""" import unittest
-from password import User
+import unittest
+import pyperclip
+#From password.py import the classes
+from password import User, Credential
 
 class TestUser(unittest.TestCase):
-    """ """ Test class that defines test cases for the user class behaviours. Specifically if the new user
-    name and new pass word are being saved """  """
+    ''' Test class that defines test cases for the user class behaviours.
+    Args: unittest.TestCase: helps in creating test cases '''
     def setUp(self):
-        def test_init(self):
-        self.assertEqual(self.new_userList.username,"Muriuki")
-        self.assertEqual(self.new_userList.password,"0712345678")
+        ''' Function to create a user account before each test '''
+        self.test_user = User('Janice','somepassword0123')
 
-
+    def test__init__(self):
+        ''' Test to if check the initialization/creation of user instances is properly done '''
+        self.assertEqual(self.test_user.loginUsername,'Janice')
+        self.assertEqual(self.test_user.loginPassword,'somepassword0123')
 
 if __name__ == '__main__':
-    unittest.main()
- """
+	unittest.main()
