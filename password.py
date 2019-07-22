@@ -55,9 +55,9 @@ class User:
             
             for user in userList:
                 if loginUsername == user[0] and loginPassword == user[1]:
+                    print("Welcome " +loginUsername)
+                    print("Hey Rafiki, please create a password vault")
                     while True:
-                        print("Welcome " +loginUsername)
-                        print("Hey Rafiki, please create a password vault")
                         print("Enter website name:")
                         appName = input()
                         print("Would you like to create or generate a password for " + appName + "?")
@@ -75,10 +75,13 @@ class User:
                         
                         print("Hey Rafiki, select an option")
                         print("1. View Apps")
+                        print("2. Enter another")
                         vault_option = int(input()) 
                         if vault_option == 1:
                             print("These are the existing apps in the vault")
                             print(Credential.apps)
+                            continue
+                        else:
                             continue                   
                 else:
                     print("This rafiki does not exist, kindly choose no. 2 to register below")             
