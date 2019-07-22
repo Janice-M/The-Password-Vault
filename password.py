@@ -44,6 +44,7 @@ class User:
         print("Rafiki,select a number")
         print("1. Login ")
         print("2. Sign up ")
+        print("3. Exit")
         option_selected = int(input())
         if option_selected == 1:
             print( "Welcome consistent rafiki")
@@ -75,27 +76,12 @@ class User:
                         
                         print("Hey Rafiki, select an option")
                         print("1. View Apps")
-                        print("2. Delete App")
-                        print("3. Add App")
+                        print("2. Add App")
                         vault_option = int(input()) 
                         if vault_option == 1:
                             print("These are the existing apps in the vault")
                             print(Credential.apps)
                             continue
-                        elif vault_option == 2:
-                            print("These are the existing apps in the vault")
-                            print(Credential.apps)
-                            print("Enter a number to delete chosen App")
-                            for app in Credential.apps:
-                                num = 0
-                                numbered_app = num + "_" + app
-                                print(num + app)
-                                num = num + 1
-                                delete_option = int(input())
-                                if delete_option = num:
-                                    app.remove(numbered_app)
-                                    continue
-                                continue
                         else:
                             continue                   
                 else:
