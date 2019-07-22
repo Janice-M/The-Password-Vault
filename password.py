@@ -59,6 +59,7 @@ class User:
                     print("Welcome " +loginUsername)
                     print("Hey Rafiki, please create a password vault")
                     while True:
+                        """ The while loop will create allow a user to enter all the app details and reset to create another third party app once all unputs are satisfied """
                         print("Enter website name:")
                         appName = input()
                         print("Enter your username in the app above")
