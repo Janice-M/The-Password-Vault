@@ -112,13 +112,6 @@ class User:
                 """ saveUser is to save the user details using the method above  """          
                 """ the elif option is used as it can take in arguements for users who would like to generate passwords """
         
-                print("Your Password Vault has been created successfully rafiki, " +newUsername)
-                print ("Please do login now")
-                print( "Welcome  rafiki:")
-                print("Kindly, enter your username:")
-                loginUsername= input()
-                print("Kindly enter your password")
-                loginPassword= input()
         else:
             break
     
