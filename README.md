@@ -30,6 +30,7 @@ BDD(Behavior Driven Development) focuses on enabling user to create an account a
 | View apps | The user is able to view all the apps they have stored in the Password Vault once they are successfully stored|
 | Exit | The user selects this option once they want to leave the Password Vault|
 
+![screenshot](terminal_screenhot.png)
 ## Setup/Installation Requirements
 
 -   Open your terminal (ctrl+alt+T).

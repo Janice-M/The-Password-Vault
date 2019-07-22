@@ -1,5 +1,6 @@
 import unittest
 import pyperclip
+import random
 
 from password import User, Credential
 
