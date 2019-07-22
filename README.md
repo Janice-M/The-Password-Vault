@@ -1,4 +1,4 @@
-# password-locker
+# The Password Vault
 
 #### version one.
 
