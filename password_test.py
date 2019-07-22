@@ -3,7 +3,7 @@ import pyperclip
 #From password.py import the classes
 from password import User, Credential
 
-class TestUser(unittest.TestCase):
+class TestUser (unittest.TestCase):
     ''' Test class that defines test cases for the user class behaviours.
     Args: unittest.TestCase: helps in creating test cases '''
     def setUp(self):

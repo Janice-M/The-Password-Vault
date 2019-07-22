@@ -47,7 +47,7 @@ class User:
         print("3. Exit")
         option_selected = int(input())
         if option_selected == 1:
-            print( "Welcome consistent rafiki")
+            print( "Welcome good ol'rafiki")
             print("Kindly, enter your username:")
             loginUsername= input()
             print("Kindly enter your password")
@@ -61,6 +61,8 @@ class User:
                     while True:
                         print("Enter website name:")
                         appName = input()
+                        print("Enter your username in the app above")
+                        appUsername= input()
                         print("Would you like to create or generate a password for " + appName + "?")
                         print("1. Create your own password")
                         print("2. Generate password ")
@@ -68,10 +70,10 @@ class User:
                         if app_option_selected == 1: 
                             print("Enter password below")
                             appPassword = input()
-                            Credential.apps.append([appName, appPassword])
+                            Credential.apps.append([appName, appUsername, appPassword])
                         elif app_option_selected == 2:
                             generator = passGen()
-                            Credential.apps.append([appName,generator])
+                            Credential.apps.append([ appName, appUsername , generator])
                         print("App stored succesfully")
                         
                         print("Hey Rafiki, select an option")
@@ -104,13 +106,14 @@ class User:
             
             elif newPassword == 2:
                 generator = passGen()
+                print(generator)
                 userList.append([newUsername,generator])
                 """ saveUser is to save the user details using the method above  """          
                 """ the elif option is used as it can take in arguements for users who would like to generate passwords """
         
                 print("Your Password Vault has been created successfully rafiki, " +newUsername)
                 print ("Please do login now")
-                print( "Welcome consistent rafiki")
+                print( "Welcome  rafiki:")
                 print("Kindly, enter your username:")
                 loginUsername= input()
                 print("Kindly enter your password")
@@ -118,3 +121,4 @@ class User:
         else:
             break
     
+
