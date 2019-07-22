@@ -58,7 +58,7 @@ class User:
             for user in userList:
                 if loginUsername == user[0] and loginPassword == user[1]:
                     print("Welcome " +loginUsername)
-                    print("Hey Rafiki, please create a password vault")
+                    print("Hey, " + loginUsername + "please enter App vault")
                     while True:
                         """ The while loop will create allow a user to enter all the app details and reset to create another third party app once all unputs are satisfied """
                         print("Enter website name:")
@@ -78,7 +78,7 @@ class User:
                             Credential.apps.append([ appName, appUsername , generator])
                         print("App stored succesfully")
                         
-                        print("Hey Rafiki, select an option")
+                        print(loginUsername +" ,select an option")
                         print("1. View Apps")
                         print("2. Add App")
                         vault_option = int(input()) 
